@@ -16,7 +16,8 @@ public:
 	/** GameObject constructor
 	* 
 	*/
-	GameObject(Mesh mesh, Material material, glm::vec3 position, glm::vec3 scale);
+	GameObject(Mesh* mesh, Material* material, glm::vec3 position, glm::vec3 scale);
+	GameObject() {}
 	/** GameObject distructor
 	*/
 	~GameObject();

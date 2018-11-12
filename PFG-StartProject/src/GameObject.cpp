@@ -5,11 +5,11 @@
 /*! \brief Brief description.
 *  GameObject class contains a mesh, a material, a position and an orientation information
 *  about the game object. This should be a base class for different types of game object.*/
-GameObject::GameObject(Mesh mesh, Material material, glm::vec3 position, glm::vec3 scale)
+GameObject::GameObject(Mesh* mesh, Material* material, glm::vec3 position, glm::vec3 scale)
 {
 	// Initialise everything here
-	_mesh = &mesh;
-	_material = &material;
+	_mesh = mesh;
+	_material = material;
 	_scale = scale;
 }
 

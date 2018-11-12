@@ -74,9 +74,9 @@ Scene::Scene()
 	_physics_object->SetScale(0.3f, 0.3f, 0.3f);
 
 	// Create a game object
-	_physics_object = new GameObject(modelMesh,objectMaterial, glm::vec3(0.0f,5.0f,0.0f), glm::vec3 scale);
+	_physics_object = new GameObject(modelMesh, objectMaterial, glm::vec3(0.0f,10.0f,0.0f), glm::vec3(1.0f,1.0f,1.0f));
 	// Create a game level object
-	_level = new GameObject(Mesh mesh, Material material, glm::vec3 position, glm::vec3 scale);
+	_level = new GameObject(groundMesh, modelMaterial, glm::vec3(0.0f,0.0f,0.0f), glm::vec3(1.0f,1.0f,1.0f));
 
 	//Initialising Gravity
 	_gravity = -9.81;

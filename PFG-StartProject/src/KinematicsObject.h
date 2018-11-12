@@ -19,6 +19,7 @@ public:
 	/** KinematicsObject constructor
 	*/
 	KinematicsObject();
+	//KinematicsObject() {}
 	/** KinematicsObject distructor
 	*/
 	~KinematicsObject();
